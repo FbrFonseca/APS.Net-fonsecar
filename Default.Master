@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="Fabricio_Fonseca_10591210.Default" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Fonsecar</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta charser="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+
+           <!-- header -->
+        <header>
+
+           <div class="banner-b1">
+              <h1 class="banner-h1">FONSECAR</h1>
+              <h2 class="banner-h2">Performance & Quality</h2>
+              <p class="banner-p">Award Winning Service Waiting For You!</p>
+           </div>
+
+           <div class="banner-b2">
+              <!-- just the car image -->
+           </div>
+
+        </header>
+                 
+        <!-- navigation -->
+        <nav>
+            <ul>
+				<li><a href="index.aspx">HOME</a></li>
+				<li><a href="autoparts.aspx">SERVICES</a></li>
+				<li><a href="staff.aspx">STAFF</a></li>
+				<li><a href="faq.aspx">FAQ</a></li>
+				<li><a href="testimonial.aspx">TESTIMONIALS</a></li>
+			</ul>
+            <div class="basket">
+            <!-- basket -->
+               <%-- <div class="basket-icon">
+                    <a href="basket.aspx"><img src="img/basket.png"></a>
+                </div>--%>
+            </div>
+        </nav>
+
+        <div class="slider-banner">
+            <div class="banner">
+                <div id="slide">
+                     <!-- carroucel -->
+                </div>
+            </div>
+        </div>
+
+         <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+              
+        
+            </asp:ContentPlaceHolder>
+        </div>
+        
+         <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+
+        
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- footer -->
+        <footer>
+            <a href="https://www.twitter.com/"><img src="img/twitter.png"></a>
+            <a href="https://www.instagram.com/"><img src="img/instagram.png"></a>
+            <a href="https://www.facebook.com"><img src="img/facebook.png"></a>
+            <p class="cpyright">© 2022 Fonsecar Group LTDA.</p>
+        </footer>
+        
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
